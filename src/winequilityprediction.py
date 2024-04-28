@@ -30,9 +30,9 @@ if __name__ == "__main__":
         valid_path = sys.argv[2]
         output_path = sys.argv[3] + "testmodel.model"
     else:
-        input_path = "s3://cs643pa2winebucket/TrainingDataset.csv"
-        valid_path = "s3://cs643pa2winebucket/ValidationDataset.csv"
-        output_path="s3://cs643pa2winebucket/testmodel.model"
+        input_path = "s3://cs643winequlpred2/TrainingDataset.csv"
+        valid_path = "s3://cs643winequlpred2/ValidationDataset.csv"
+        output_path="s3://cs643winequlpred2/testmodel.model"
 
     
     df = (spark.read
