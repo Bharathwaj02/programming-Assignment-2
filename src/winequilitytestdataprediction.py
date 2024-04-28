@@ -30,8 +30,8 @@ elif len(sys.argv) > 1:
 else:
     current_dir = os.getcwd() 
     print(current_dir)
-    input_path = os.path.join(current_dir,"cs643pa2winebucket\data\csv\testdata.csv")
-    model_path= os.path.join(current_dir, "cs643pa2winebucket\data\model\testdata.model")
+    input_path = os.path.join(current_dir,"cs643winequlpred2\data\csv\testdata.csv")
+    model_path= os.path.join(current_dir, "cs643winequlpred2\data\model\testdata.model")
 df = (spark.read
         .format("csv")
         .option('header', 'true')
